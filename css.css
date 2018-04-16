@@ -1,4 +1,4 @@
-html {background-color: #22c7d3; 
+html {background-image: url('https://overheadproductions.files.wordpress.com/2013/06/sequence-01-still0015.jpg'); 
     text-align:center;
 }
 
@@ -7,7 +7,8 @@ h3 {
     font-size: 40px;
 }
 
-a { color: white;
+a { color: #22c7d3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 h1 {
@@ -31,4 +32,33 @@ p {
 table {
     font-size: 27px;
     text-align:center;
+}
+
+img {
+    border-radius: 8px;
+} 
+
+.about { float: left;
+    width: 30%;
+
+}
+
+.info { float: left; 
+    width: 70%;
+
+}
+body {
+
+    border: 5px solid rgb(165, 171, 243);
+    
+    }
+
+footer {
+
+    font-size: 26px;
+    font-style: bold;
+}
+marquee {
+    font-family: 'Gill Sans';
+    font-style: italic;
 }
