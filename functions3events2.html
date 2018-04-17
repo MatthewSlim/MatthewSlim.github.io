@@ -1,0 +1,48 @@
+<html>
+<head>
+<title> Home Page </title>
+<link href="css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body> 
+        <h3>
+                <a href = "index.html" > Home Page </a>
+                &nbsp;&nbsp;
+                        <a href = "about.html" > About Me </a>
+                        &nbsp;&nbsp;
+                                <a href = "project.html" > Project List </a>
+                                &nbsp; &nbsp;
+                                <a href = "exercises.html" > Exercises </a>
+                                </h3>
+
+                                Name:<br>
+                                <input id= "name" type="text" name="name"/>
+                                <br>
+                                Age:<br>
+                                <input id= "age" type="text" name="age"/>
+                                <br>
+                                Occupation:<br>
+                                <input id= "occupation" type="text" name="occupation"/>
+                                <br> <br>
+                                <input type="button" onclick="addPerson()" value="Add Person" />
+                             
+                            
+                              <script> //functions 3/events 2
+                                  function addPerson(){
+                                  var newPerson = {};
+                                  newPerson.name = document.getElementById("name").value;
+                                  newPerson.age = document.getElementById("age").value;
+                                  newPerson.occupation = document.getElementById("occupation").value;
+                            
+                             var output = "My name is " + newPerson.name + ", I am " + newPerson.age + " years old, and my occupation is " + newPerson.occupation;
+                                  alert(output);
+                                  }
+                                </script>
+
+</body>
+<footer></footer>
+<marquee id=marquee class="footer"> 
+        Copyright property of Matthew Slim.
+    </div> </marquee>
+    </footer>
+    </html>
