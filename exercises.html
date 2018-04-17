@@ -1,0 +1,111 @@
+<html>
+<head>
+<title> Home Page </title>
+<link href="css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body> 
+        <h3>
+                <a href = "index.html" > Home Page </a>
+                &nbsp;&nbsp;
+                        <a href = "about.html" > About Me </a>
+                        &nbsp;&nbsp;
+                                <a href = "project.html" > Project List </a>
+                                &nbsp; &nbsp;
+                                <a href = "exercises.html" > Exercises </a>
+                                </h3>
+
+
+<script>
+    //creating a script
+    alert("Hello world!");
+</script>
+
+<script>
+    //variables
+    var keyword = "Matt"
+    alert(keyword);
+    console.log(keyword);
+    document.write(keyword);
+</script>
+        
+<script>
+    //functions1
+function squarenumber(sqnum) {
+    return sqnum*sqnum;
+}
+var square = squarenumber(2);
+console.log(square);
+</script>
+
+<script>
+    //functions2
+
+function sumnumber(num1, num2, num3) {
+    return num1+num2+num3;
+}
+var sum = sumnumber(4,6,8);
+console.log(sum);
+</script>
+
+<script>
+//variables2
+var object = {name: "Matt", age: 22, occupation: "Software Tester trainee"};
+var output = object.name + " " + object.age + " " + object.occupation;
+console.log(output);
+object.name = "Tony";
+object.age = 26;
+object.occupation = "Plumber";
+var output = object.name + " " + object.age + " " + object.occupation;
+console.log(output);
+</script>
+
+<script>
+//events1
+function addage() {
+++object.age;
+var ageoutput = object.name + " " + object.age + " " + object.occupation;
+alert(ageoutput);
+}
+
+</script>
+
+<input type="button" onclick="addage()" value="Click to add age" />
+
+<script>
+    //functions3/events 2
+
+</script>
+
+<form>
+    Name:<br>
+    <input type="text" name="name" value="Tony">
+    <br>
+    Age:<br>
+    <input type="text" name="age" value="26">
+    <br>
+    Occupation:<br>
+    <input type="text" name="occupation" value="Plumber">
+    <br> <br>
+    <input type="submit" value="Submit">
+  </form> 
+
+</body>
+
+<footer>
+
+    <div class="social">
+            Here you can find my social media accounts
+            <a href="https://www.facebook.com">
+            <img alt = 'Facebook' src="https://png.icons8.com/color/1600/facebook" width="35px" height="35px" /> </a>
+            <a href="https://www.twitter.com">
+                    <img alt = 'Twitter' src="https://www.laneterralever.com/wp-content/uploads/2017/02/twitter-logo.jpg" width="35px" height="35px" /> </a>
+                    <a href="https://www.instagram.com">
+                            <img alt = 'Instagram' src="https://www.philosopher.eu/wp-content/uploads/2013/10/Instagram-logo.png" width="35px" height="35px" /> </a>
+            
+             </div>  
+<marquee id=marquee class="footer"> 
+    Copyright propity of Matthew Slim.
+</div> </marquee>
+</footer>
+</html>
