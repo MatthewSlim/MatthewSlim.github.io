@@ -20,62 +20,33 @@
                                 </h3>
 
 
-<script>
-    //creating a script
-    alert("Hello world!");
-</script>
 
-<script>
-    //variables
-    var keyword = "Matt"
-  //  alert(keyword);
-    console.log(keyword);
- //   document.write(keyword);
-</script>
-        
-<script>
-    //functions1
-function squarenumber(sqnum) {
-    return sqnum*sqnum;
-}
-var square = squarenumber(2);
-console.log(square);
-</script>
 
-<script>
-    //functions2
 
-function sumnumber(num1, num2, num3) {
-    return num1+num2+num3;
-}
-var sum = sumnumber(4,6,8);
-console.log(sum);
-</script>
+    Name:<br>
+    <input id= "name" type="text" name="name"/>
+    <br>
+    Age:<br>
+    <input id= "age" type="text" name="age"/>
+    <br>
+    Occupation:<br>
+    <input id= "occupation" type="text" name="occupation"/>
+    <br> <br>
+    <input type="button" onclick="addPerson()" value="Add Person" />
+ 
 
-<script>
-//variables2
-var object = {name: "Matt", age: 22, occupation: "Software Tester trainee"};
-var output = object.name + " " + object.age + " " + object.occupation;
-console.log(output);
-object.name = "Tony";
-object.age = 26;
-object.occupation = "Plumber";
-var output = object.name + " " + object.age + " " + object.occupation;
-console.log(output);
-</script>
+  <script> //functions 3/events 2
+      function addPerson(){
+      var newPerson = {};
+      newPerson.name = document.getElementById("name").value;
+      newPerson.age = document.getElementById("age").value;
+      newPerson.occupation = document.getElementById("occupation").value;
 
-<script>
-//events1
-function addage() {
-++object.age;
-var ageoutput = object.name + " " + object.age + " " + object.occupation;
-alert(ageoutput);
-}
-
-</script>
-
-<input type="button" onclick="addage()" value="Click to add age" />
-
+ var output = "My name is " + newPerson.name + ", I am " + newPerson.age + " years old, and my occupation is " + newPerson.occupation;
+      console.log(output);
+      }
+    </script>
+    
 
 
 </body>
