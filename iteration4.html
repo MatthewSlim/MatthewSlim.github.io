@@ -19,27 +19,37 @@
                         <input id="number" type="text" name="number" />
 
                                 <br>                
-                <input type="button" onclick="addNumber()" value="Enter Number" /> <br>
+                <input type="button" onclick="divide()" value="Enter Number" /> <br>
              
+
+                
                                 
                                 <script>
+function divide(){
+var newnumber = document.getElementById("number").value
+newnumber = parseInt(newnumber)
 
-var i = document.getElementById("number").value
-newnumber = i
-for (var count = 0; newnumber !=1; i++){
-if (i % 3==0)
-document.write (i/3)
+for (count = 0; newnumber>1; count++){
 
-else if (i++ % 3==0)
-document.write (i/3)
 
-else if (i-- % 3==0)
-document.write (i/3);
-} 
+if (newnumber % 3==0){
+var numberdiv = (newnumber/3)
+newnumber = numberdiv
+console.log(numberdiv)}
+
+else if (newnumber % 3==1){
+        var numberdiv = ((newnumber-1)/3)
+        newnumber = numberdiv
+console.log(numberdiv)}
+
+else if (newnumber % 3==2){
+        var numberdiv = ((newnumber+1)/3)
+        newnumber = numberdiv
+console.log(numberdiv);}
+}
+}
                                 </script>
-                               
-
-
+                 
 </body>
 <footer></footer>
 <marquee id=marquee class="footer"> 

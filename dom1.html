@@ -1,0 +1,52 @@
+<html>
+<head>
+<title> DOM 1 </title>
+<link href="css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body> 
+        <h3>
+                <a href = "index.html" > Home Page </a>
+                &nbsp;&nbsp;
+                        <a href = "about.html" > About Me </a>
+                        &nbsp;&nbsp;
+                                <a href = "project.html" > Project List </a>
+                                &nbsp; &nbsp;
+                                <a href = "exercises.html" > Exercises </a>
+                                </h3>
+
+                                <input id= "edit" type="text" name="Edit"/> <br>
+
+                        <script>
+
+function createpara() {
+var para = document.createElement("para");
+var newContent = document.createTextNode("para");
+para.appendChild(newContent);
+var cpara = document.getElementById("para");
+document.body.insertBefore(para, cpara);
+para.setAttribute("id", "edit");
+    } 
+
+function changetext() {
+document.getElementById("edit").innerHTML = document.getElementById("para").value;
+
+}
+
+function deletepara() {
+
+document.removeChild("para");
+
+}
+
+                        </script>
+               <input type="button" onclick="createpara()" value="Click to create paragraph" /> <br>
+               <input type="button" onclick="changetext()" value="Change text" /> <br>
+               <input type="button" onclick="deletepara()" value="Delete" />
+</body>
+<footer></footer>
+<marquee id=marquee class="footer"> 
+        Copyright property of Matthew Slim.
+    </div> </marquee>
+    </footer>
+    </html>
