@@ -15,27 +15,27 @@
                                 <a href = "exercises.html" > Exercises </a>
                                 </h3>
 
-                                <input id= "edit" type="text" name="Edit"/> <br>
+                                <input id= "para" type="text" name="para"/> <br>
 
                         <script>
 
 function createpara() {
-var para = document.createElement("para");
+var para = document.createElement("p");
 var newContent = document.createTextNode("para");
 para.appendChild(newContent);
 var cpara = document.getElementById("para");
 document.body.insertBefore(para, cpara);
 para.setAttribute("id", "edit");
-    } 
+    }
 
 function changetext() {
 document.getElementById("edit").innerHTML = document.getElementById("para").value;
-
 }
 
 function deletepara() {
 
-document.removeChild("para");
+var finaldelete = document.getElementById("edit");
+finaldelete.removeChild(finaldelete.childNodes[0]);
 
 }
 

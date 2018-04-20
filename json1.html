@@ -1,0 +1,43 @@
+<html>
+<head>
+<title> Json 1 </title>
+<link href="css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body> 
+        <h3>
+                <a href = "index.html" > Home Page </a>
+                &nbsp;&nbsp;
+                        <a href = "about.html" > About Me </a>
+                        &nbsp;&nbsp;
+                                <a href = "project.html" > Project List </a>
+                                &nbsp; &nbsp;
+                                <a href = "exercises.html" > Exercises </a>
+                                </h3>
+<h1></h1>
+
+
+<script>
+var requestURL = 'https://raw.githubusercontent.com/ewomackQA/JSONDataRepo/master/example.json';
+var request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json'
+request.send();
+request.onload = function() {
+var requestData = request.response;
+var myH1 = document.createElement('h1');
+myH1.textContent = requestData['squadName'];
+document.getElementsByTagName('head')[0].appendChild(myH1);
+}
+
+
+    
+</script>
+
+</body>
+<footer></footer>
+<marquee id=marquee class="footer"> 
+        Copyright property of Matthew Slim.
+    </div> </marquee>
+    </footer>
+    </html>
